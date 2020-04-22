@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebP iPhone Test</title>
+  <style type="text/css">
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  html {
+    height: 100%;
+  }
+  body {
+    background: #000;
+    color: #fff;
+    height: 100%;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  h1,
+  p {
+    margin-top: 0;
+  }
+  .lead {
+    margin-bottom: 30px;
+  }
+  picture {
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  img {
+    height: auto;
+    max-height: 300px;
+    max-width: 75%;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <h1>WebP iPhone Test</h1>
+    <p class="lead">A WebP test support for iPhone browsers Safari/Chrome through HTML image source type.</p>
+
+    <picture>
+      <source srcset="image.webp" type="image/webp">
+      <img alt="" src="image.png">
+    </picture>
+    
+    <!-- cloudfront sample -->
+    <!-- <picture>
+      <source srcset="https://yourcfpath.cloudfront.net/filters:format(webp)/filename.webp" type="image/webp">
+      <source srcset="https://yourcfpath.cloudfront.net/filters:format(png)/filename.webp" type="image/png">
+      <img alt="" src="https://yourcfpath.cloudfront.net/filename.webp">
+    </picture> -->
+
+  </div>
+</body>
+</html>
